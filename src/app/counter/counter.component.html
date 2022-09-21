@@ -1,0 +1,18 @@
+<div style="display: flex; padding: 5px;">
+<button (click)='startTimer()'>Start Timer</button >
+<button style="margin-left: 5px;" (click)='pauseTimer()'>Pause</button>
+</div>
+<div style="display: flex; padding: 5px;">
+  <button (click)="addHour()">+H</button>
+  <button style="margin-left: 5px;margin-right: 5px;" (click)="removeHour()">-H</button>
+
+  <button (click)="addMin()">+M</button>
+  <button style="margin-left: 5px;margin-right: 5px;" (click)="removeMin()">-M</button>
+
+  <button (click)="addSec()">+S</button>
+  <button style="margin-left: 5px;margin-right: 5px;" (click)="removeSec()">-S</button>
+
+</div>
+<div style=" font: bolder 30px sans-serif;">
+<p >{{  display }}</p>
+</div>

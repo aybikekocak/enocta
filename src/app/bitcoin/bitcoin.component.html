@@ -1,0 +1,45 @@
+<div>
+  <div>
+<table>
+<tr>
+<th >{{data.bpi.EUR.code}}</th>
+<th>{{data.bpi.USD.code}}</th>
+<th>{{data.bpi.GBP.code}}</th>
+
+</tr>
+
+<tr>
+  <th [ngStyle]="{'color':
+  selectEur === 0 ?
+   'gray' :
+  selectEur === 1 ?
+     'green' :
+    'red'
+     }">{{data.bpi.EUR.rate}}</th>
+  <th [ngStyle]="{'color':
+  selectUsd === 0 ?
+   'gray' :
+  selectUsd === 1 ?
+     'green' :
+    'red'
+     }">{{data.bpi.USD.rate}}</th>
+  <th [ngStyle]="{'color':
+  selectGbp === 0 ?
+   'gray' :
+  selectGbp === 1 ?
+     'green' :
+    'red'
+     }">{{data.bpi.GBP.rate}}</th>
+
+
+</tr>
+
+</table>
+</div>
+
+<div>
+
+
+</div>
+
+</div>
